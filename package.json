@@ -1,0 +1,32 @@
+{
+  "name": "webpack-react-antd",
+  "version": "1.0.0",
+  "description": "webpack-react-antd",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack --config ./webpack.dev.config.js",
+    "build": "NODE_ENV=production webpack --config ./webpack.prod.config.js --color --progress",
+    "build:dll": "webpack --config ./webpack.dll.config.js",
+    "start": "npm run dev"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tuhaibo/webpack-antd.git"
+  },
+  "keywords": [
+    "webpack-react-antd"
+  ],
+  "author": "haibo.tu",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tuhaibo/webpack-antd/issues"
+  },
+  "homepage": "https://github.com/Tuhaibo/webpack-antd#readme",
+  "devDependencies": {
+    "html-webpack-plugin": "^4.2.0",
+    "webpack": "^4.42.1",
+    "webpack-cli": "^3.3.11",
+    "webpack-dev-server": "^3.10.3",
+    "webpack-merge": "^4.2.2"
+  }
+}
