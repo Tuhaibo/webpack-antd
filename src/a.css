@@ -1,0 +1,9 @@
+body {
+	background-color: red;
+}
+
+#root {
+	color: #fff;
+	font-weight: 30px;
+	transform: rotate(45deg);
+}
