@@ -1,0 +1,27 @@
+.basic-Layout{
+	height: calc(100vh) !important;
+	&-header{
+		// position: fixed;
+		// z-index: 1;
+		width: 100%;
+		background-color: #fff;
+	}
+	&-content{
+		overflow: auto !important;
+		&-slider{
+			background-color: #fff;
+		}
+		&-content{
+			overflow: auto !important;
+			display: block !important;
+		}
+	}
+	.ant-layout-sider-trigger{
+		background : #fff ;
+		// position:absolute;
+	}
+	.sider-trigger-right .ant-layout-sider-trigger{
+		padding-right:24px;
+		text-align:right;
+	}
+}

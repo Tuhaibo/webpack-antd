@@ -6,6 +6,12 @@ const commonConfig = require('./webpack.base.config.js')
 
 module.exports = merge(commonConfig, {
 	mode: "development",
+	optimization: {
+		splitChunks: {
+			chunks: "all", // 所有的 chunks 代码公共的部分分离出来成为一个单独的文件
+		},
+	},
+	devtool: 'eval-source-map', //  不会单独生成一个文件 但会显示行和列
 	devServer: {
 		// hot: true,
 		// disableHostCheck: true,

@@ -1,19 +1,29 @@
 {
-	"presets": ["@babel/preset-env"
-		// ,"@babel/preset-react"
+	"presets": [
+		"@babel/preset-env",
+		"@babel/preset-react"
 	],
 	"plugins": [
-		["@babel/plugin-proposal-decorators", { // 来解析 @log 装饰器这种语法
-			"legacy": true
-		}],
-		["@babel/plugin-proposal-class-properties", { //来解析类语法
-			"loose": true
-		}],
-		// ["import", {
-		// 	"libraryName": "antd",
-		// 	"libraryDirectory": "lib",
-		// 	"style": true // `style: true` 会加载 less 文件
-		// }],
+		[
+			"@babel/plugin-proposal-decorators",
+			{ // 来解析 @log 装饰器这种语法
+				"legacy": true
+			}
+		],
+		[
+			"@babel/plugin-proposal-class-properties",
+			{ //来解析类语法
+				"loose": true
+			}
+		],
+		[
+			"import",
+			{
+				"libraryName": "antd",
+				"libraryDirectory": "lib",
+				"style": true // `style: true` 会加载 less 文件
+			}
+		],
 		"@babel/plugin-transform-runtime" //来处理js语法 includes
 	]
 }
